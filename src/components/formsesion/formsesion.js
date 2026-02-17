@@ -25,7 +25,7 @@ function Formsesion({ onRegisterClick, cerrarform }) {
     setError('');
 
     try {
-      const response = await fetch("https://mi-app-backend-1-lfrs.onrender.com", {
+      const response = await fetch("https://spa-app-backend-fpu7.onrender.com/api/auth/login", {
         method: 'POST',
         headers: {
          
