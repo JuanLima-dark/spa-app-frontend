@@ -1,0 +1,18 @@
+/* Redes sociales */
+.facebook, .instagram , .whatsapp  {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.instagram,
+.facebook,
+.whatsapp {
+  transition: transform 0.3s ease;
+}
+
+.instagram:hover,
+.facebook:hover,
+.whatsapp:hover {
+  transform: scale(1.4);
+}

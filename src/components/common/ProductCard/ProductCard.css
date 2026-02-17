@@ -1,0 +1,196 @@
+/* Product Card */
+.product-card {
+  background-color:#021C2C;
+  border: 1px solid ;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: gray;
+}
+
+body.light-mode .product-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.product-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-name {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.product-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4CAF50;
+  margin-bottom: 12px;
+}
+
+.product-description {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  flex-grow: 1;
+  transition: color 0.3s ease;
+}
+
+.btnc {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+body.light-mode .btnc {
+  background-color: #667eea;
+  color: white;
+  border: 1px solid #667eea;
+}
+
+.btnc:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body.light-mode .btnc:hover {
+  background-color: #5568d3;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets grandes (768px - 1024px) */
+@media (max-width: 1024px) {
+  .product-card {
+    padding: 18px;
+  }
+  
+  .product-image {
+    height: 180px;
+  }
+  
+  .product-name {
+    font-size: 17px;
+  }
+  
+  .product-price {
+    font-size: 22px;
+  }
+  
+  .product-description {
+    font-size: 13px;
+  }
+}
+
+/* Tablets (600px - 768px) */
+@media (max-width: 768px) {
+  .product-card {
+    padding: 16px;
+  }
+  
+  .product-image {
+    height: 160px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+  }
+  
+  .product-description {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+  
+  .btnc {
+    padding: 9px;
+    font-size: 13px;
+  }
+}
+
+/* Móviles (menos de 600px) */
+@media (max-width: 600px) {
+  .product-card {
+    padding: 14px;
+  }
+  
+  .product-image {
+    height: 150px;
+  }
+  
+  .product-name {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  
+  .product-price {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .btnc {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+/* Móviles muy pequeños (menos de 400px) */
+@media (max-width: 400px) {
+  .product-card {
+    padding: 12px;
+  }
+  
+  .product-image {
+    height: 130px;
+  }
+  
+  .product-name {
+    font-size: 14px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+  }
+  
+  .product-description {
+    font-size: 11px;
+  }
+}

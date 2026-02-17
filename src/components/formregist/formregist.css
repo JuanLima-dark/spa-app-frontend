@@ -1,0 +1,120 @@
+
+/* ===== FORMULARIO ===== */
+.foregister {
+    height: -50px;
+    border-radius: 10px;
+    margin-top: 300px; /*mueve el form hacia abajo*/
+    margin-left: 400px; /*a la derecha*/
+    width: 500px;
+    padding: 70px;
+    margin-top: 20px; /*subir el form hacia arriba*/
+    background-color: rgba(2, 28, 44, 0.9);
+    box-shadow: -10px 0 30px rgb(0, 2, 3);}
+    
+.closebtn{
+    width: 8%;
+    padding: 7px;
+    background: linear-gradient(135deg, #0a2ab8 0%, #0a43e0 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-left: 370px;
+    margin-top: -40px;
+    font-size: 1.1rem;
+    font-weight: 50;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+a{
+    color: #b22be7;
+}
+
+.foregister > input:focus{
+    border: 3px solid blue;
+}
+ .foregister > input:valid{
+    border: 3px solid green;
+}
+
+.foregister >  input:invalid{
+    border: 3px solid red;
+}
+
+
+/* ===== INPUTS ===== */
+.btncolor {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+/* ===== BOTÓN ===== */
+ .foregister > button {
+
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ft{
+    
+    padding: 80px;
+   
+  
+}
+button:hover {
+    transform: scale(1.03);
+}
+
+/* ===== LABELS ===== */
+label {
+    color: white;
+    font-size: 14px;
+}
+
+/* ===== MEDIA QUERY TABLETS ===== */
+
+@media (max-width: 1200px) {
+
+  
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .image img {
+        width: 220px;
+    }
+
+   
+}
+
+/* ===== MEDIA QUERY CELULARES ===== */
+@media (max-width: 768px) {
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    .image img {
+        width: 180px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
