@@ -25,7 +25,8 @@ function Formsesion({ onRegisterClick, cerrarform }) {
     setError('');
 
     try {
-      const response = await fetch("https://spa-app-backend-fpu7.onrender.com/api/auth/login", {
+      const response = await fetch("https://spa-app-backend-fpu7.onrender.com/api/auth/login", 
+        {
         method: 'POST',
         headers: {
          
@@ -33,7 +34,8 @@ function Formsesion({ onRegisterClick, cerrarform }) {
          
         },
         body: JSON.stringify(formsesi),
-      });
+      }
+    );
 
       const data = await response.json();
 
