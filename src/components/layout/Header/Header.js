@@ -183,7 +183,7 @@ function Header({ cartCount, onLoginClick, toggleCarrito, onRegisterClick }) {
                         setShowResults(false);
                       }}
                     >
-                      <img src={product.image || '/placeholder.jpg'} alt={product.name} />
+                      /*<img src={product.image || '/placeholder.jpg'} alt={product.name} />
                       <div style={{ flex: 1 }}>
                         <h3>{product.name}</h3>
                         <p>{product.description}</p>
@@ -199,7 +199,7 @@ function Header({ cartCount, onLoginClick, toggleCarrito, onRegisterClick }) {
               )}
             </section>
           )}
-        </div>
+        </div>*/
 
         {/* Settings Button */}
         <button
